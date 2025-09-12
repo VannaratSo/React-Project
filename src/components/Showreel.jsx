@@ -1,0 +1,80 @@
+import { useState } from "react";
+import ANGKOR from '../assets/ANGKOR WAT THEME.PNG'
+import Phone from '../assets/Hand and iphone 16 Pro.png'
+import Phone1 from '../assets/iphone 16 Pro.png'
+const videos = [
+  {
+    id: ANGKOR,
+    title: "Showreel 2025",
+    thumbnail: ANGKOR,
+  },
+  {
+    id: Phone,
+    title: "15 Financial Products",
+    thumbnail: Phone,
+  },
+  {
+    id: Phone1,
+    title: "Digital-Only Lifestyle Bank",
+    thumbnail: Phone1,
+  },
+  {
+    id: "https://www.youtube.com/watch?v=lV7AqIfPLuA",
+    title: "Middle East Banking App",
+    thumbnail: Phone,
+  },
+  {
+    id: "VIDEO_ID_5",
+    title: "Spatial Banking",
+    thumbnail: "/thumbnails/spatial.jpg",
+  },
+];
+
+const Showreel = () => {
+  const [activeVideo, setActiveVideo] = useState(videos[0]);
+
+  return (
+    <section className="bg-Showreel py-16 px-6 lg:px-20 text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+       Show <span className="text-blue-400">Reel</span>
+      </h2>
+      <p className="text-gray-400 mb-10">
+        Welcome to Delightech – powering innovation in finance.
+      </p>
+
+      {/* Main Video */}
+      <div className="relative aspect-video max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg shadow-blue-500/20 mb-8">
+        <iframe
+          className="w-full h-full"
+          src={`https://www.youtube.com/embed/${activeVideo.id}?rel=0&showinfo=0`}
+          title={activeVideo.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      {/* Thumbnails Row */}
+      <div className="flex gap-4 overflow-x-auto scrollbar-hide max-w-5xl mx-auto">
+        {videos.map((video) => (
+          <button
+            key={video.id}
+            onClick={() => setActiveVideo(video)}
+            className={`flex-shrink-0 w-60 rounded-xl overflow-hidden bg-dark border-2 shadow-lg shadow-blue-500/10 mb-8 ${
+              activeVideo.id === video.id
+                ? "border-blue-500"
+                : "border-transparent hover:border-gray-600"
+            }`}
+          >
+            <img
+              src={video.thumbnail}
+              alt={video.title}
+              className="w-full h-36 object-cover"
+            />
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Showreel;

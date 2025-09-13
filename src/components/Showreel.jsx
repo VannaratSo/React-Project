@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ANGKOR from '../assets/ANGKOR WAT THEME.PNG'
-import Phone from '../assets/Hand and iphone 16 Pro.png'
-import Phone1 from '../assets/iphone 16 Pro.png'
+import ANGKOR from '../assets/mockup (1).png'
+import Phone from '../assets/mockup (2).png'
+import Phone1 from '../assets/mockup (3).png'
 const videos = [
   {
     id: ANGKOR,
@@ -42,7 +42,6 @@ const Showreel = () => {
         Welcome to Delightech – powering innovation in finance.
       </p>
 
-      {/* Main Video */}
       <div className="relative aspect-video max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg shadow-blue-500/20 mb-8">
         <iframe
           className="w-full h-full"
@@ -53,13 +52,12 @@ const Showreel = () => {
         ></iframe>
       </div>
 
-      {/* Thumbnails Row */}
       <div className="flex gap-4 overflow-x-auto scrollbar-hide max-w-5xl mx-auto">
         {videos.map((video) => (
           <button
             key={video.id}
             onClick={() => setActiveVideo(video)}
-            className={`flex-shrink-0 w-60 rounded-xl overflow-hidden bg-dark border-2 shadow-lg shadow-blue-500/10 mb-8 ${
+            className={`flex-shrink-0 w-60 rounded-xl overflow-hidden bg-dark border-2 overflow-hidden bg-black/20 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-blue-500/30 mb-8  ${
               activeVideo.id === video.id
                 ? "border-blue-500"
                 : "border-transparent hover:border-gray-600"

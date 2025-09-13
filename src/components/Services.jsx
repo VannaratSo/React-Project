@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import mockup from "../assets/iphone 16 Pro.png";
-import mockup1 from "../assets/iphone 16 Pro.png";
+import mockup from "../assets/luyleun (2).png";
+import mockup1 from "../assets/luyleun (2).png";
 
 const services = [
   {
@@ -29,10 +29,10 @@ const Services = () => {
           <div
             key={index}
             className={`flex flex-col  md:flex-row items-center md:items-center gap-20 ${
-              index % 2 === 1 ? "md:flex-row-reverse" : ""
+              index % 2 == 1 ? "md:flex-row-reverse" : ""
             }`}
           >
-            {/* Text Section */}
+
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-2xl font-bold text-white leading-snug">
                 {service.title}{" "}
@@ -43,17 +43,16 @@ const Services = () => {
               <p className="mt-4 text-gray-300 text-base leading-relaxed max-w-md mx-auto md:mx-0">
                 {service.desc}
               </p>
-              <button className="mt-6 px-6 py-2 rounded-full border border-blue-400 text-blue-300 hover:bg-blue-600 hover:text-white transition">
+              <button className="mt-6 px-6 py-2 rounded-full border border-white-400 text-white-300 hover:bg-blue-600 hover:text-white transition">
                 Read more →
               </button>
             </div>
 
-            {/* Image Section */}
             <div className="flex-1 flex justify-center md:justify-end">
               <img
                 src={service.img}
                 alt={service.highlight}
-                className="w-64 md:w-80 lg:w-96 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+                className="w-64 md:w-180 lg:w-96 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]"
               />
             </div>
           </div>

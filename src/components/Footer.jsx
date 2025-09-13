@@ -1,16 +1,12 @@
-import { useState, useEffect } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegram } from "react-icons/fa";
-import DLT1 from '../assets/DLT1.png'
+import DLT1 from '../assets/tagline (1).png'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto px-1 grid md:grid-cols-3 gap-12">
         <div>
-          <img className="h-16" src={DLT1} alt="Delightech Logo" />
-          <p className="text-sm py-5">
-            Everyone Can Access Finance
-          </p>
+          <img className="h-12" src={DLT1} alt="Delightech Logo" />
         </div>
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
@@ -35,6 +31,9 @@ const Footer = () => {
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
             <FaLinkedinIn />
+          </a>
+          <a href="https://telegram.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
+            <FaTelegram />
           </a>
         </div>
         </div>

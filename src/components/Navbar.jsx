@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegram } from "react-icons/fa";
-import DLT1 from '../assets/DLT1.png'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegram, FaYoutube } from "react-icons/fa";
+import DLT1 from '../assets/DLT (3).png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,11 +38,17 @@ const Navbar = () => {
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
             <FaFacebookF />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-pink-400">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-pink-500">
             <FaInstagram />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
             <FaLinkedinIn />
+          </a>
+          <a href="https://telegram.com" target="_blank" rel="noreferrer" className="hover:text-blue-500">
+            <FaTelegram />
+          </a>
+          <a href="https://Youtube" target="_blank" rel="noreferrer" className="hover:text-red-500">
+            <FaYoutube />
           </a>
         </div>
 
@@ -73,6 +79,10 @@ const Navbar = () => {
             <a href="https://telegram.org" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
               <FaTelegram />
             </a>
+
+            <a href="https://Youtube.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
+            <FaYoutube />
+          </a>
           </div>
         </div>
       )}

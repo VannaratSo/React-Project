@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import mockup from "../assets/mockup.png";
+import mockup from "../assets/mockup (1).png";
 const Hero = () => {
   return (
     <section
@@ -10,7 +10,7 @@ const Hero = () => {
 
       <div className=" items-center lg:items-start lg:text-left z-10">
         <motion.h1
-          className="text-3xl md:text-5xl font-bold text-white max-h-md mb-6"
+          className="text-3xl md:text-6xl font-bold text-white max-h-md mb-6"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -59,7 +59,7 @@ const Hero = () => {
         <img
           src={mockup}
           alt="Mockup"
-          className="flex-1/2 w-auto max-w-[1000px] sm:max-w-[1000px] md:max-w-[400px] lg:max-w-[800px] drop-shadow-2xl"
+          className="flex-1/2 w-auto max-w-[900px] sm:max-w-[1000px] md:max-w-[400px] lg:max-w-[800px] drop-shadow-2xl"
         />
       </motion.div>
     </section>

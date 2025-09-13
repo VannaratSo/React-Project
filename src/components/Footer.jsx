@@ -1,18 +1,32 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
+import { useState, useEffect } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegram } from "react-icons/fa";
+import DLT1 from '../assets/DLT1.png'
 const Footer = () => {
   return (
-    <footer className="backdrop-blur-lg bg-white/10 border-t border-white/20 text-white py-10 mt-20">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        <h2 className="text-2xl font-bold">Delightech</h2>
-        <ul className="flex flex-wrap justify-center md:justify-start gap-6 text-gray-200 text-sm">
-          <li><a href="#home" className="hover:text-blue-300">Home</a></li>
-          <li><a href="#services" className="hover:text-blue-300">Services</a></li>
-          <li><a href="#team" className="hover:text-blue-300">Team</a></li>
-          <li><a href="#about" className="hover:text-blue-300">About</a></li>
-          <li><a href="#contact" className="hover:text-blue-300">Contact</a></li>
-        </ul>
-        <div className="flex space-x-4 text-lg">
+    <footer className="bg-gray-900 text-gray-300 py-10">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+          <img className="h-10" src={DLT1} alt="Delightech Logo" />
+          <p className="text-sm py-5">
+            Delivering digital excellence through innovation, creativity, and cutting-edge technology.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            <li><a href="/" className="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="/services" className="hover:text-blue-400 transition">Services</a></li>
+            <li><a href="/team" className="hover:text-blue-400 transition">Team</a></li>
+            <li><a href="/about" className="hover:text-blue-400 transition">About</a></li>
+            <li><a href="/investor" className="hover:text-blue-400 transition">Investor</a></li>
+          </ul>
+        </div>
+
+        {/* Column 3 - Social Media */}
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
+         <div className="flex space-x-4 text-lg">
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
             <FaFacebookF />
           </a>
@@ -23,8 +37,11 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
         </div>
+        </div>
       </div>
-      <div className="mt-8 text-center text-gray-400 text-xs">
+
+      {/* Bottom bar */}
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Delightech. All rights reserved.
       </div>
     </footer>

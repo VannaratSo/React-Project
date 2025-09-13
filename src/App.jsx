@@ -5,7 +5,6 @@ import Showreel from "./components/Showreel"
 import Team from './components/Team'
 import Services from './components/Services'
 import Footer from './components/Footer'
-
 function App() {
   return (
     <div className="relative min-h-screen text-white">

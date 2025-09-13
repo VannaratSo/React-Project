@@ -7,9 +7,9 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
         <div>
-          <img className="h-10" src={DLT1} alt="Delightech Logo" />
+          <img className="h-16" src={DLT1} alt="Delightech Logo" />
           <p className="text-sm py-5">
-            Delivering digital excellence through innovation, creativity, and cutting-edge technology.
+            Everyone Can Access Finance
           </p>
         </div>
         <div>

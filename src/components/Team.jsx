@@ -85,7 +85,7 @@ const Team = () => {
               </h3>
               <p className="text-blue-300 text-sm">{member.role}</p>
             </div>
-            <div className="flex justify-between px-16 py-3">
+            <div className=" flex items-center justify-between px-16 py-3">
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
             <FaFacebookF />
           </a>

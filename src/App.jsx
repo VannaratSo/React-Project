@@ -1,23 +1,30 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Showreel from "./components/Showreel"
-import Team from './components/Team'
-import Services from './components/Services'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Services from "./components/Services";
+import About from "./components/About";
+
+
 function App() {
   return (
-    <div className="relative min-h-screen text-white">
-      <div className="absolute inset-0 bg-darklight-blue animate-gradient -z-10"></div>
+    <Router>
       <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      <Showreel />
-      <Team />
-      <Footer/>
-    </div>
-  )
+      <main className="pt-20">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/Services" element={<Services />} />
+           <Route path="/About" element={<About />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

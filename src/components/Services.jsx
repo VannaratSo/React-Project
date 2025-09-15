@@ -1,5 +1,6 @@
+import React from "react";
 import { motion } from "framer-motion";
-import mockup from "../assets/luyleun (2).png";
+import mockup from "../assets/Bomnin.png";
 import mockup1 from "../assets/luyleun (2).png";
 
 const services = [
@@ -20,7 +21,7 @@ const services = [
 const Services = () => {
   return (
     <section id="services" className="bg-Services py-20 px-6 lg:px-20 text-center flex flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+      <h2 className="text-5xl md:text-4xl font-bold text-white text-center mb-6">
         Our <span className="text-blue-500">Services</span>
       </h2>
 
@@ -28,13 +29,13 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col  md:flex-row items-center md:items-center gap-20 ${
+            className={`flex flex-col  md:flex-row items-center md:items-center gap-40 ${
               index % 2 == 1 ? "md:flex-row-reverse" : ""
             }`}
           >
 
             <div className="flex-1 text-center md:text-left">
-              <h3 className="text-2xl font-bold text-white leading-snug">
+              <h3 className="text-xl font-bold text-white leading-snug">
                 {service.title}{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                   {service.highlight}
@@ -48,11 +49,11 @@ const Services = () => {
               </button>
             </div>
 
-            <div className="flex-1 flex justify-center md:justify-end">
+            <div className="flex-1/2 flex justify-center md:justify-end">
               <img
                 src={service.img}
                 alt={service.highlight}
-                className="w-64 md:w-180 lg:w-96 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+                className="w-64 md:w-1 lg:w-96"
               />
             </div>
           </div>

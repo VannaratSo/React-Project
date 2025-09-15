@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import ANGKOR from '../assets/mockup (1).png'
 import Phone from '../assets/mockup (2).png'

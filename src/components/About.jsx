@@ -7,7 +7,7 @@ const About = () => {
 
       <div className="w-full max-w-4xl bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl shadow-xl p-10">
         <p className="text-gray-300 leading-relaxed mb-6">
-          At <span className="text-blue-400 font-semibold">Delightech Co,.Ltd</span>, we
+          At <span className="text-blue-400  font-semibold">Delightech Co,.Ltd</span>, we
           are passionate about crafting digital experiences that blend
           creativity, technology, and innovation. Our mission is to help
           businesses grow by delivering high-quality design, development, and

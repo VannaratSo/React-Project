@@ -10,7 +10,7 @@ const Hero = () => {
 
       <div className=" items-center lg:items-start lg:text-left z-10">
         <motion.h1
-          className="text-3xl md:text-6xl font-bold text-white max-h-md mb-6"
+          className="text-5xl md:text-7xl font-bold text-white max-h-md mb-6"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -19,7 +19,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-200 max-w-md mb-8"
+          className="text-lg md:text-xl text-gray-200 max-w-md mb-10"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -37,7 +37,6 @@ const Hero = () => {
         </motion.button>
       </div>
 
-      {/* Right: Floating Mockup */}
       <motion.div
         className="flex-1/2 flex justify-center mt-10 lg:mt-3 max-w-md"
         initial={{ scale: 0.8, opacity: 0 }}
@@ -59,7 +58,7 @@ const Hero = () => {
         <img
           src={mockup}
           alt="Mockup"
-          className="flex-1/2 w-auto max-w-[900px] sm:max-w-[1000px] md:max-w-[400px] lg:max-w-[800px] drop-shadow-2xl"
+          className="flex-1/2 w-auto max-w-[700px] sm:max-w-[800px] md:max-w-[400px] lg:max-w-[900px] drop-shadow-2xl"
         />
       </motion.div>
     </section>

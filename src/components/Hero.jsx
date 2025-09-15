@@ -4,13 +4,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 overflow-hidden"
+      className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 overflow-hidden gap-40 "
     >
       <div className="absolute inset-0 hero-gradient -z-10"></div>
 
-      <div className=" items-center lg:items-start lg:text-left z-10">
+      <div className=" items-center lg:items-start lg:text-left z-20">
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-white max-h-md mb-6"
+          className="text-5xl md:text-5xl font-bold text-white max-h-md mb-6"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -19,7 +19,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-200 max-w-md mb-10"
+          className="text-lg md:text-xl text-gray-200 max-w-md mb-6"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="flex-1/2 flex justify-center mt-10 lg:mt-3 max-w-md"
+        className="flex-1/2 flex justify-center lg:mt-3 max-w-md"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{
           scale: 1,

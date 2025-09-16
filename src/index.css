@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #000dff;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
-}
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -46,7 +40,7 @@ body {
   
 }
 .bg-Services, .bg-About, .bg-Showreel, .bg-Team {
-  background: linear-gradient(-45deg, #020c1b, #00112e);
+   background-color: #00081f;
   background-size: 300% 300%;
   animation: gradientMove 12s ease infinite;
 }

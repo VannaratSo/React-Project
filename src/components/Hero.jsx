@@ -58,7 +58,7 @@ const Hero = () => {
         <img
           src={mockup}
           alt="Mockup"
-          className="flex-1/2 w-auto max-w-[700px] sm:max-w-[800px] md:max-w-[400px] lg:max-w-[600px] drop-shadow-2xl"
+          className="flex-1/2 w-auto max-w-[500px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] drop-shadow-2xl"
         />
       </motion.div>
     </section>

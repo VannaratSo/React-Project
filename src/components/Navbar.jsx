@@ -9,7 +9,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
-import logo from "../assets/DLT (2).png";
+import logo from "../assets/DLT (3).png";
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false);

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import mockup from "../assets/mockup (1).png";
+import mockup from "../assets/DLT.png";
 const Hero = () => {
   return (
     <section
@@ -58,7 +58,7 @@ const Hero = () => {
         <img
           src={mockup}
           alt="Mockup"
-          className="flex-1/2 w-auto max-w-[700px] sm:max-w-[800px] md:max-w-[400px] lg:max-w-[900px] drop-shadow-2xl"
+          className="flex-1/2 w-auto max-w-[700px] sm:max-w-[800px] md:max-w-[400px] lg:max-w-[600px] drop-shadow-2xl"
         />
       </motion.div>
     </section>

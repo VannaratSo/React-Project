@@ -2,7 +2,7 @@
 
 A modern **React + Vite + Tailwind + Framer Motion** Delightech project.
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Install dependencies:
 
@@ -18,11 +18,12 @@ A modern **React + Vite + Tailwind + Framer Motion** Delightech project.
 
 3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## 📦 Features
+## Features
 
 - React (Vite)
 - Tailwind CSS
 - Responsive Navbar
+- Home, Services, Business, Portfolio, Contact
 - Hero, About, Navbar, Services, Showreel, Team, Footer
 - Animated gradient background
 - Framer Motion animations

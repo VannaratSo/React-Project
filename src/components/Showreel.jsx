@@ -20,7 +20,7 @@ const videos = [
     thumbnail: Phone1,
   },
   {
-    id: "https://www.youtube.com/watch?v=lV7AqIfPLuA",
+    id: "h",
     title: "Middle East Banking App",
     thumbnail: Phone,
   },

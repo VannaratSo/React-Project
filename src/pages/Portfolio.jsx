@@ -3,9 +3,8 @@ import React from "react";
 const BusinessPortfolio = () => {
   return (
     <section className="min-h-screen portfolio text-white py-16 px-6 md:px-20">
-      {/* Header */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Business <span className="text-blue-400  font-semibold ">Portfolio</span>
         </h1>
         <p className="text-gray-300 max-w-3xl mx-auto text-lg">
@@ -15,16 +14,13 @@ const BusinessPortfolio = () => {
         </p>
       </div>
 
-      {/* Company Overview */}
       <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 mb-12">
         <h2 className="text-2xl font-semibold mb-4">Company Overview</h2>
-        <p className="text-gray-300 leading-relaxed">
-          Delightech PLC is a forward-thinking financial technology company
-          dedicated to creating innovative digital solutions that improve access
-          to financial services in Cambodia. Established with a vision to bridge
-          the gap between technology and finance, Delightech specializes in
-          developing platforms that deliver speed, security, and simplicity for
-          both individuals and businesses.
+        <p className="text-gray-300 leading-relaxed"><span className="text-blue-500 font-bold">Delightech Co,. Ltd </span>
+          are passionate about crafting digital experiences that blend
+          creativity, technology, and innovation. Our mission is to help
+          businesses grow by delivering high-quality design, development, and
+          strategy services that leave a lasting impact.
         </p>
         <p className="text-gray-300 leading-relaxed mt-4">
           Our flagship product, <span className="font-bold">LUYLEUN</span>, is
@@ -33,7 +29,6 @@ const BusinessPortfolio = () => {
         </p>
       </div>
 
-      {/* Vision & Mission */}
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8">
           <h2 className="text-2xl font-semibold mb-4">Vision</h2>
@@ -61,7 +56,6 @@ const BusinessPortfolio = () => {
         </div>
       </div>
 
-      {/* Core Values */}
       <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 mb-12">
         <h2 className="text-2xl font-semibold mb-4">Core Values</h2>
         <ul className="grid md:grid-cols-2 gap-4 text-gray-300">
@@ -73,7 +67,6 @@ const BusinessPortfolio = () => {
         </ul>
       </div>
 
-      {/* Our Flagship Product */}
       <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Flagship Product: LUYLEUN</h2>
         <p className="text-lg font-bold mb-4">
@@ -91,7 +84,6 @@ const BusinessPortfolio = () => {
         </ul>
       </div>
 
-      {/* Key Features */}
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8">
           <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
@@ -113,7 +105,7 @@ const BusinessPortfolio = () => {
         </div>
       </div>
 
-      {/* Competitive Advantage */}
+
       <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 mb-12">
         <h2 className="text-2xl font-semibold mb-4">Competitive Advantage</h2>
         <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -124,7 +116,6 @@ const BusinessPortfolio = () => {
         </ul>
       </div>
 
-      {/* Future Expansion */}
       <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8">
         <h2 className="text-2xl font-semibold mb-4">Future Expansion</h2>
         <p className="text-gray-300 mb-4">

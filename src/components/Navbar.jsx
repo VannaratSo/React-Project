@@ -12,16 +12,20 @@ import { FiX } from "react-icons/fi";
 import logo from "../assets/DLT (2).png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const [isOpen, setIsOpen] = useState(false);
+const [language, setLanguage] = useState("EN"); 
+const toggleLanguage = () => {
+    setLanguage(language === "EN" ? "KH" : "EN");
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="backdrop-blur-md bg-white/10 border-b border-white/30">
-        <div className="flex justify-between items-center px-6 md:px-12 py-5">
+        <div className="flex justify-between items-center px-6 md:px-16 py-5">
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Logo" className="h-10 w-10" />
           </div>
-          <div className="hidden md:flex space-x-8 text-white font-medium">
+          <div className="hidden md:flex space-x-10 text-white font-medium">
             <Link to="/" className="hover:text-blue-300 transition">
               Home
             </Link>
@@ -36,15 +40,14 @@ const Navbar = () => {
             </Link>
           </div>
 
-    
           <div className="hidden md:flex space-x-6 text-white">
-            <a href="#"><FaFacebookF className="hover:text-blue-400" /></a>
+            <a href="https://www.facebook.com/delightechasia"><FaFacebookF className="hover:text-blue-400" /></a>
             <a href="#"><FaInstagram className="hover:text-pink-400" /></a>
-            <a href="#"><FaLinkedinIn className="hover:text-blue-500" /></a>
+            <a href="https://www.linkedin.com/company/delightech-asia/posts/?feedView=all"><FaLinkedinIn className="hover:text-blue-500" /></a>
             <a href="#"><FaTelegramPlane className="hover:text-sky-400" /></a>
-            <a href="#"><FaYoutube className="hover:text-red-500" /></a>
+            <a href="https://www.youtube.com/@-luyleun"><FaYoutube className="hover:text-red-500" /></a>
           </div>
-
+          
           <button
             className="md:hidden text-white text-2xl"
             onClick={() => setIsOpen(!isOpen)}

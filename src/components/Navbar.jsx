@@ -34,9 +34,6 @@ const Navbar = () => {
             <Link to="/contact" className="hover:text-blue-300 transition">
               Contact
             </Link>
-            <Link to="/About" className="hover:text-blue-300 transition">
-              About us
-            </Link>
           </div>
 
     

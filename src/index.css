@@ -35,11 +35,15 @@ body {
   }
 }
 .hero-gradient {
-  background: linear-gradient(-45deg, #02132c, #112240, #1e3a8a, #3b82f6);
+  background: linear-gradient(-45deg, #02132c, #112240, #053CC7, #1953EA);
   background-size: 300% 300%;
   animation: gradientMove 12s ease infinite;
 }
 .bg-Services, .bg-About, .bg-Showreel, .bg-Team {
   background-color: #00081f;
   background-size: 300% 300%;
+}
+.portfolio{
+  background-color: #00081f;
+ 
 }

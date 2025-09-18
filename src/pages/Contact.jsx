@@ -1,4 +1,3 @@
-import React from "react";
 import ContactInfo from "../components/ContactInfo";
 import Contactform from "../components/Contactform";
 import angkor from '../assets/angkorwat.png';

@@ -3,7 +3,7 @@ import angkor from '../assets/angkor-wat.webp';
 const ContactInfo = () => {
   return (
 
-    <div className="flex flex-col justify-center text-white space-y-5">
+    <div className="flex flex-col fixed-center justify-center text-white space-y-5">
       <h2 className="text-3xl font-bold"><span className="text-blue-500">Get</span> in Touch</h2>
       <p className="text-gray-300">
         Have questions about our services? We’d love to hear from you.

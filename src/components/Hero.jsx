@@ -5,18 +5,18 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 overflow-hidden gap-40 "
+      className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 py-6 lg:px-20 overflow-hidden gap-20 "
     >
       <div className="absolute inset-0 hero-gradient -z-10"></div>
 
       <div className=" items-center lg:items-start lg:text-left z-20">
         <motion.h1
-          className="text-5xl md:text-5xl font-bold text-white max-h-md mb-6"
+          className="text-5xl md:text-6xl font-bold text-white mb-8"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Innovating Finance.  <span className="text-blue-500">Empowering Lives. </span>
+          Everyone  <span className="text-blue-500">Can Access Finance. </span>
         </motion.h1>
 
         <motion.p
@@ -59,7 +59,7 @@ const Hero = () => {
         <img
           src={mockup}
           alt="Mockup"
-          className="flex-1/2 w-auto max-w-[500px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] drop-shadow-2xl"
+          className="flex-1/2 w-auto max-w-[400px]  lg:max-w-[600px] drop-shadow-2xl"
         />
       </motion.div>
     </section>

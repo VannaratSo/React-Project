@@ -13,10 +13,6 @@ import logo from "../assets/DLT (3).png";
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false);
-const [language, setLanguage] = useState("EN"); 
-const toggleLanguage = () => {
-    setLanguage(language === "EN" ? "KH" : "EN");
-  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
@@ -40,7 +36,7 @@ const toggleLanguage = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex space-x-6 text-white">
+          <div className="hidden md:flex space-x-3 text-white">
             <a href="https://www.facebook.com/delightechasia"><FaFacebookF className="hover:text-blue-400" /></a>
             <a href="#"><FaInstagram className="hover:text-pink-400" /></a>
             <a href="https://www.linkedin.com/company/delightech-asia/posts/?feedView=all"><FaLinkedinIn className="hover:text-blue-500" /></a>
@@ -70,7 +66,7 @@ const toggleLanguage = () => {
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
-            <div className="flex space-x-4 pt-4">
+            <div className="flex space-x-4 pt-">
               <a href="#"><FaFacebookF className="hover:text-blue-400" /></a>
               <a href="#"><FaInstagram className="hover:text-pink-400" /></a>
               <a href="#"><FaLinkedinIn className="hover:text-blue-500" /></a>

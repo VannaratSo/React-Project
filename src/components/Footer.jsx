@@ -1,5 +1,5 @@
 
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTelegram, FaYoutube,} from "react-icons/fa";
 import DLT1 from '../assets/tagline (1).png'
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-blue-500 mb-4">Follow Us</h3>
          <div className="flex flex  space-x-4 pt-4">
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">
-            <FaFacebookF />
+            <FaFacebook />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-pink-400">
             <FaInstagram />

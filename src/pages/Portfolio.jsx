@@ -70,7 +70,7 @@ const BusinessPortfolio = () => {
       <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Flagship Product: LUYLEUN</h2>
         <p className="text-lg font-bold mb-4">
-          LUYLEUN – លុយឆាប់ ទាន់ចិត្ត! (Fast Cash, Instant Approval!)
+          LUYLEUN (Fast Cash, Instant Approval!)
         </p>
         <p className="text-gray-300 mb-6">
           LUYLEUN is a cutting-edge loan service platform designed to provide quick and

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import mockup from "../assets/DLT.png";
+ 
 const Hero = () => {
   return (
     <section

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import mockup from "../assets/Bomnin.png";
 import mockup1 from "../assets/luyleun (2).png";
 
@@ -20,8 +19,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="bg-Services py-20 px-6 lg:px-20 text-center flex flex-col items-center">
-      <h2 className="text-5xl md:text-4xl font-bold text-white text-center mb-6">
+    <section id="services" className="py-40 px-6 lg:px-20 text-center flex flex-col items-center bg-white dark:bg-gray-800 transition-colors duration-300">
+      <h2 className="text-5xl md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white">
         Our <span className="text-blue-500">Services</span>
       </h2>
 
@@ -35,16 +34,16 @@ const Services = () => {
           >
 
             <div className="flex-1 text-center md:text-left">
-              <h3 className="text-xl font-bold text-white leading-snug">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white  leading-snug">
                 {service.title}{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                   {service.highlight}
                 </span>
               </h3>
-              <p className="mt-4 text-gray-300 text-base leading-relaxed max-w-md mx-auto md:mx-0">
+              <p className="mt-4 text-gray-300 text-gray-800 dark:text-white text-base leading-relaxed max-w-md mx-auto md:mx-0">
                 {service.desc}
               </p>
-              <button className="mt-6 px-6 py-2 rounded-full border border-white-400 text-white-300 hover:bg-blue-600 hover:text-white transition">
+              <button className="mt-6  dark:text-white  px-6 py-2 rounded-full border dark:border-white hover:bg-blue-600 hover:text-white transition">
                 Read more →
               </button>
             </div>

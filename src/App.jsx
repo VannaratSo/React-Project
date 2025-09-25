@@ -7,13 +7,16 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Services from "./components/Services";
 import About from "./components/About";
-
+import { ThemeProvider } from './Context/ThemeContext';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
   return (
-    <Router>
+     
+    <ThemeProvider>
+    <Router className="min-h-screen bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <Navbar />
-      <main className="pt-20">
+      <main className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
@@ -21,9 +24,12 @@ function App() {
           <Route path="/Services" element={<Services />} />
            <Route path="/About" element={<About />} />
         </Routes>
+        <LanguageSwitcher/>
       </main>
       <Footer />
     </Router>
+    </ThemeProvider>
+    
   );
 }
 

@@ -1,4 +1,5 @@
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -10,6 +11,9 @@ export default {
       },
       animation: {
         gradient: "gradient 12s ease infinite",
+      },
+      colors: {
+        dark: '#000b23ff',
       },
     },
   },

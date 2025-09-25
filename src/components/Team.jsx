@@ -60,19 +60,19 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="bg-Team py-20 px-6 lg:px-20 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+    <section className="bg-Team py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300">
+      <h2 className="text-3xl md:text-4xl font-bold text-dark mb-6  dark:text-white">
         Meet Our <span className="text-blue-500">Team</span>
       </h2>
-      <p className="text-gray-300 max-w-2xl mx-auto mb-12">
+      <p className="text-gray-300 max-w-2xl mx-auto mb-12 text-gray-600 dark:text-gray-300">
         Meet the people working to solve citizens’ financial needs
       </p>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-gray-600 dark:text-gray-300">
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="rounded-2xl overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-2 transition-all duration-300"
+            className="rounded-2xl overflow-hidden dark:bg-dark/10 backdrop-blur-lg border border-white/40 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-2 transition-all duration-300"
           >
             <img
               src={member.img}
@@ -80,10 +80,10 @@ const Team = () => {
               className="w-full h-46 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-white">
+              <h3 className="text-lg font-semibold text-black text-gray-600 dark:text-gray-300">
                 {member.name}
               </h3>
-              <p className="text-blue-300 text-sm">{member.role}</p>
+              <p className="text-blue-500 text-sm">{member.role}</p>
             </div>
             <div className=" flex items-center justify-between px-16 py-3">
           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-blue-400">

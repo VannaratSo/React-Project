@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ThemeToggle from './ThemeToggle';
+import LanguageSwitcher from "./LanguageSwitcher";
 import {
   FaFacebookF,
   FaInstagram,
@@ -9,19 +11,19 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
-import logo from "../assets/DLT (3).png";
+import logo from "../assets/DLT1.png";
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="backdrop-blur-md bg-white/10 border-b border-white/30">
-        <div className="flex justify-between items-center px-6 md:px-16 py-5">
+      <div className="bg-white backdrop-blur-md bg-white/30 border-b border-white/30 white:bg-gray transition-colors duration-300">
+        <div className="flex justify-between items-center px-6 md:px-16 py-5 dark:text-dark-300">
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Logo" className="h-10 w-10" />
           </div>
-          <div className="hidden md:flex space-x-10 text-white font-medium">
+          <div className="hidden md:flex space-x-10 font-bold text-dark dark:text-white">
             <Link to="/" className="hover:text-blue-300 transition">
               Home
             </Link>
@@ -34,9 +36,11 @@ const [isOpen, setIsOpen] = useState(false);
             <Link to="/contact" className="hover:text-blue-300 transition">
               Contact
             </Link>
+             <LanguageSwitcher />
+             <ThemeToggle />
           </div>
 
-          <div className="hidden md:flex space-x-3 text-white">
+          <div className="hidden md:flex space-x-3 text-dark-300 text-black dark:text-white">
             <a href="https://www.facebook.com/delightechasia"><FaFacebookF className="hover:text-blue-400" /></a>
             <a href="#"><FaInstagram className="hover:text-pink-400" /></a>
             <a href="https://www.linkedin.com/company/delightech-asia/posts/?feedView=all"><FaLinkedinIn className="hover:text-blue-500" /></a>
@@ -50,6 +54,7 @@ const [isOpen, setIsOpen] = useState(false);
           >
             {isOpen ? <FiX /> : <FaBars />}
           </button>
+          
         </div>
 
         {isOpen && (

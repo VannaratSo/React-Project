@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html { font-family: Inter, "Noto Sans Khmer", system-ui, sans-serif; }
 
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -33,18 +37,4 @@
   background-size: 300% 300%;
   animation: gradientMove 12s ease infinite;
 }
-.Contact {
-  background: linear-gradient(-45deg, #020c1b, #041127, #053CC7, #000e32);
-  background-size: 300% 300%;
-  animation: gradientMove 12s ease infinite;
-  
-}
-.bg-Services, .bg-About, .bg-Showreel, .bg-Team {
-   background-color: #00081f;
-  background-size: 300% 300%;
-  animation: gradientMove 12s ease infinite;
-}
-.portfolio{
-  background-color: #00081f;
- 
-}
+

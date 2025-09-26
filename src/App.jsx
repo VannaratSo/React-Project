@@ -8,7 +8,6 @@ import Contact from "./pages/Contact";
 import Services from "./components/Services";
 import About from "./components/About";
 import { ThemeProvider } from './Context/ThemeContext';
-import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
           <Route path="/Services" element={<Services />} />
            <Route path="/About" element={<About />} />
         </Routes>
-        <LanguageSwitcher/>
       </main>
       <Footer />
     </Router>

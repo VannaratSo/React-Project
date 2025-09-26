@@ -1,4 +1,3 @@
-// ThemeContext.jsx
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext();
@@ -8,22 +7,19 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
-    // Check if user has a theme preference in localStorage
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       setIsDark(savedTheme === 'dark');
     } else {
-      // If no saved preference, check system preference
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       setIsDark(prefersDark);
     }
   }, []);
 
   useEffect(() => {
-    // Update the HTML class and localStorage when theme changes
     if (isDark) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');

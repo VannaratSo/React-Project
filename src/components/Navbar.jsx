@@ -18,7 +18,7 @@ const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="bg-blue-800 backdrop-blur-md bg-white/30 border-b border-white/30 white:bg-gray transition-colors duration-300">
+      <div className="bg-blue-800 border-b border-white/30 white:bg-gray transition-colors duration-300">
         <div className="flex justify-between items-center px-6 md:px-16 py-5 dark:text-dark-300">
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Logo" className="h-10 w-10" />

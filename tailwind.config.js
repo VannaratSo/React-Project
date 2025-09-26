@@ -14,6 +14,7 @@ export default {
       },
       colors: {
         dark: '#000b23ff',
+        light: '#f0f0f0ff',
       },
     },
   },

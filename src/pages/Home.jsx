@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import About from "../components/About";
 import Showreel from "../components/Showreel";
 import Team from "../components/Team";
+import LatestNews from "../components/LatestNews";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Showreel/>
       <Team/>
+       <LatestNews />
     </>
   );
 }

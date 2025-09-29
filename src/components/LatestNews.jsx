@@ -1,18 +1,20 @@
 // src/components/LatestNewsDelightech.jsx
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import new1 from '../assets/1.png'
+import new2 from '../assets/2.png'
 
 const newsData = [
   {
     date: "20 SEP 2025",
     title: "Delightech Launches New Corporate Website",
-    image: "https://via.placeholder.com/600x400",
+    image: new1,
     link: "#",
   },
   {
     date: "10 SEP 2025",
     title: "Our Team Attends Cambodia Tech Expo 2025",
-    image: "https://via.placeholder.com/600x400",
+    image: new2,
     link: "#",
   },
   {
@@ -43,31 +45,28 @@ const LatestNews = () => {
           </a>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8">
           {newsData.map((item, index) => (
             <a
               href={item.link}
               key={index}
-              className="group block rounded-xl overflow-hidden border border-gray-300 dark:border-white/20 shadow-sm hover:shadow-md hover:border-blue-600 transition"
+              className="group block bg-white rounded-xl overflow-hidden border border-gray-300 dark:border-white/20 shadow-sm hover:shadow-md hover:border-blue-600 transition"
             >
-              {/* Image */}
               <div className="relative">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <span className="absolute top-3 left-3 text-xs font-medium bg-white text-blue-600 px-3 py-1 rounded-full shadow">
+                <span className="absolute top-3 left-3 text-xs font-medium bg-black/20 text-blue-600 px-3 py-1 rounded-full shadow">
                   {item.date}
                 </span>
               </div>
-
-              {/* Content */}
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition">
                   {item.title}
                 </h3>
-                <span className="flex items-center gap-1 text-sm text-green-600 mt-4 font-medium">
+                <span className="flex items-center gap-1 text-sm text-blue-600 mt-4 font-medium">
                   Read More <ArrowRight size={16} />
                 </span>
               </div>

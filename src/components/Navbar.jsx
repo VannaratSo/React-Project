@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeToggle from './ThemeToggle';
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -15,7 +17,7 @@ import logo from "../assets/DLT (3).png";
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false);
-
+const { t } = useTranslation(["home","common"]);
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="bg-blue-800 border-b border-white/30 white:bg-gray transition-colors duration-300">
@@ -25,16 +27,16 @@ const [isOpen, setIsOpen] = useState(false);
           </div>
           <div className="hidden md:flex space-x-8 text-white dark:text-white">
             <Link to="/" className="hover:text-blue-300 transition">
-              Home
+              {t("home", { ns: "common" })}
             </Link>
             <Link to="/services" className="hover:text-blue-300 transition">
-              Services
+              {t("services", { ns: "common" })}
             </Link>
             <Link to="/portfolio" className="hover:text-blue-300 transition">
-              Business Portfolio
+              {t("portfolio", { ns: "common" })}
             </Link>
             <Link to="/contact" className="hover:text-blue-300 transition">
-              Contact
+              {t("contact", { ns: "common" })}
             </Link>
              <LanguageSwitcher />
              <ThemeToggle />

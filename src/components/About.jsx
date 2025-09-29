@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 const About = () => {
+   const { t } = useTranslation(["about"]);
   return (
     <section className=" py-20 px-6 lg:px-20 text-center flex flex-col items-center bg-white dark:bg-gray-800 transition-colors duration-300">
       <h2 className="text-3xl md:text-4xl font-bold text-dark mb-10  dark:text-white">
-        About<span className="text-blue-400"> Us</span>
+       {t("headline", { ns: "about" })} <span className="text-blue-400"> {t("span", { ns: "about" })}</span>
       </h2>
 
       <div className="w-full max-w-4xl bg-dark/10 backdrop-blur-lg border dark:border-white/20 rounded-3xl p-10 ">

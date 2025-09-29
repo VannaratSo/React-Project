@@ -1,35 +1,26 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import en from "./locales/en.json";
-import kh from "./locales/kh.json";
-
 i18n
-  .use(LanguageDetector) // detects browser language & supports caching
+  .use(Backend)
+  .use(LanguageDetector) 
   .use(initReactI18next)
   .init({
-    resources: {
-      en: { translation: en },
-      kh: { translation: kh }
-    },
     fallbackLng: "en",
-    debug: false, // set true while debugging
+    debug: false,
+    ns: ["common", "home"], 
+    defaultNS: "common",
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json"
+    },
     detection: {
-      // order to check for language
-      order: ["localStorage", "navigator"],
-      // cache user language in localStorage
+      order: ["localStorage", "navigator", "htmlTag"],
       caches: ["localStorage"]
     },
-    interpolation: {
-      escapeValue: false // React already escapes
-    }
+    react: { useSuspense: false },
+    interpolation: { escapeValue: false }
   });
-
-// keep document language attribute in sync
-document.documentElement.lang = i18n.language || "en";
-i18n.on("languageChanged", (lng) => {
-  document.documentElement.lang = lng;
-});
 
 export default i18n;

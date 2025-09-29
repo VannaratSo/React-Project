@@ -1,27 +1,27 @@
 import React from "react";
 import mockup from "../assets/Bomnin.png";
 import mockup1 from "../assets/luyleun (2).png";
+import { useTranslation } from "react-i18next";
 
 const services = [
   {
     title: "LUYLEUN",
     highlight: "Moblie App",
-    desc: "We provide premium service focused on financial innovation and digital excellence. Our experts craft unique solutions tailored to your business growth.",
     img: mockup1,
   },
   {
     title: "Bom nin",
     highlight: "Luy kak",
-    desc: "Custom strategies designed for financial services. We deliver intuitive and user-friendly experiences, driving customer satisfaction and trust.",
     img: mockup,
   },
 ];
 
 const Services = () => {
+  const { t } = useTranslation(["service","common"]);
   return (
     <section id="services" className="py-40 px-6 lg:px-20 text-center light:bg-gray-800 flex flex-col items-center bg-white dark:bg-gray-800 transition-colors duration-300">
       <h2 className="text-5xl md:text-4xl font-bold text-dark text-center mb-6 text-lg  dark:text-white">
-        Our <span className="text-blue-500">Services</span>
+        {t("headline", { ns: "service" })} <span className="text-blue-500">{t("span", { ns: "service" })}</span>
       </h2>
 
       <div className="space-y-28">
@@ -41,7 +41,7 @@ const Services = () => {
                 </span>
               </h3>
               <p className="mt-4 text-gray-300 text-gray-800 dark:text-white text-base leading-relaxed max-w-md mx-auto md:mx-0">
-                {service.desc}
+                {t("description","description1", { ns: "service" })}
               </p>
               <button className="mt-6  dark:text-white  px-6 py-2 rounded-full border dark:border-white hover:bg-blue-600 hover:text-white transition">
                 Read more →

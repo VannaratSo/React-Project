@@ -3,7 +3,9 @@ import { useState } from "react";
 import ANGKOR from '../assets/mockup (1).png'
 import Phone from '../assets/mockup (2).png'
 import Phone1 from '../assets/mockup (3).png'
+import { useTranslation } from "react-i18next";
 const videos = [
+  
   {
     id: ANGKOR,
     title: "Showreel 2025",
@@ -33,14 +35,14 @@ const videos = [
 
 const Showreel = () => {
   const [activeVideo, setActiveVideo] = useState(videos[0]);
-
+const { t } = useTranslation(["showreel"]);
   return (
     <section className="bg-Showreel py-16 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300">
       <h2 className="text-3xl md:text-4xl font-bold text-dark mb-8  dark:text-white">
-       Show <span className="text-blue-400">Reel</span>
+        {t("headline", { ns: "showreel" })} <span className="text-blue-400"> {t("span", { ns: "showreel" })}</span>
       </h2>
       <p className="text-gray-400 mb-10 text-gray-600 dark:text-gray-300">
-        Welcome to Delightech – powering innovation in finance.
+         {t("description", { ns: "showreel" })}
       </p>
 
       <div className="relative aspect-video max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg shadow-blue-500/30 mb-8">

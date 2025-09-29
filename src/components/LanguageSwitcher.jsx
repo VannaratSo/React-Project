@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
         onClick={toggleLanguage}
         className=" inline-flex h-7 w-18 items-center px-4 py-3 bg-white text-dark text-sm rounded-full shadow-lg hover:bg-gray-700 transition"
       >
-        {i18n.language === "en" ? "ភាសាខ្មែរ" : "English"}
+        {i18n.language === "en" ? "English" : "ភាសាខ្មែរ"}
       </button>
     </div>
   );

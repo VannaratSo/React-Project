@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import mockup from "../assets/DLT.png";
+import { useTranslation } from "react-i18next";
  
 const Hero = () => {
+  const { t } = useTranslation(["home","common"]);
   return (
     <section
       id="home"
@@ -12,11 +14,12 @@ const Hero = () => {
       <div className=" items-center lg:items-start lg:text-left z-20">
         <motion.h1
           className="text-5xl md:text-6xl font-bold text-white mb-8"
+          
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Everyone  <span className="text-blue-500">Can Access Finance. </span>
+        {t("headline", { ns: "home" })}<span className="text-blue-500">{t("span", { ns: "home" })} </span>
         </motion.h1>
 
         <motion.p
@@ -25,7 +28,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          At Delightech Co., Ltd., we specialize in creating technology-driven financial solutions that make life easier, faster, and more secure. Our flagship product, LUYLEUN, is redefining access to instant loans in Cambodia.
+          {t("description", { ns: "home" })}
         </motion.p>
 
         <motion.button
@@ -34,7 +37,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 1 }}
         >
-          Explore more →
+          {t("explore", { ns: "common" })}
         </motion.button>
       </div>
 

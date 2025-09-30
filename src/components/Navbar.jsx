@@ -64,7 +64,7 @@ const Navbar = () => {
               Services
             </Link>
             <Link to="/portfolio" onClick={() => setIsOpen(false)}>
-              Business Portfolio
+              Portfolio
             </Link>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               Contact

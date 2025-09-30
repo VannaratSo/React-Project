@@ -43,7 +43,7 @@ const Services = () => {
               <p className="mt-4 text-gray-300 text-gray-800 dark:text-white text-base leading-relaxed max-w-md mx-auto md:mx-0">
                 {t("description","description1", { ns: "service" })}
               </p>
-              <button className="mt-6  dark:text-white  px-6 py-2 rounded-full border dark:border-white hover:bg-blue-600 hover:text-white transition">
+              <button className="mt-6 border-dark dark:text-white  px-6 py-2 rounded-full border dark:border-white hover:bg-blue-600 hover:text-white transition">
                 Read more →
               </button>
             </div>

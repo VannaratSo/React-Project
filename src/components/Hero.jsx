@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 py-6 lg:px-20 overflow-hidden gap-20 "
+      className="relative min-h-screen hero-gradient flex flex-col lg:flex-row items-center justify-center px-6 py-6 lg:px-20 overflow-hidden gap-20 "
     >
-      <div className="absolute inset-0 hero-gradient -z-10"></div>
+      
 
       <div className=" items-center lg:items-start lg:text-left z-20">
         <motion.h1

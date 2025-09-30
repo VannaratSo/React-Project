@@ -42,7 +42,7 @@ const { t } = useTranslation(["showreel"]);
         {t("headline", { ns: "showreel" })} <span className="text-blue-400"> {t("span", { ns: "showreel" })}</span>
       </h2>
       <p className="text-gray-400 mb-10 text-gray-600 dark:text-gray-300">
-         {t("description", { ns: "showreel" })}
+         {t("paragrap", { ns: "showreel" })}
       </p>
 
       <div className="relative aspect-video max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-lg shadow-blue-500/30 mb-8">
@@ -60,7 +60,7 @@ const { t } = useTranslation(["showreel"]);
           <button
             key={video.id}
             onClick={() => setActiveVideo(video)}
-            className={`flex-shrink-0 w-60 rounded-xl overflow-hidden bg-dark border-2 overflow-hidden shadow-lg shadow-blue-500/30 bg-black/20 backdrop-blur-lg text-gray-600 dark:text-gray-300border border-white/20  mb-8  ${
+            className={`flex-shrink-0 w-60 rounded-xl overflow-hidden bg-dark border-2 overflow-hidden shadow-lg hover:shadow-blue-500/30 bg-black/20 backdrop-blur-lg text-gray-600 dark:text-gray-300   mb-8  ${
               activeVideo.id === video.id
                 ? "border-blue-500"
                 : "border-transparent hover:border-gray-500"

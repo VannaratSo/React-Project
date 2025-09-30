@@ -8,27 +8,29 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Services from "./components/Services";
 import About from "./components/About";
-import { ThemeProvider } from './Context/ThemeContext';
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-     
     <ThemeProvider>
-    <Router className="min-h-screen light:bg-gray-300 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-      <Navbar />
-      <main className="">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/Services" element={<Services />} />
-           <Route path="/About" element={<About />} />
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
+      <div className="min-h-screen light:bg-gray-300 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </ThemeProvider>
-    
   );
 }
 

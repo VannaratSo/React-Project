@@ -7,6 +7,8 @@ import team5 from '../assets/7.png'
 import team6 from '../assets/6.png'
 import team7 from '../assets/8.png'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTelegram, FaYoutube } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 const teamMembers = [
   {
     id: 1,
@@ -59,20 +61,21 @@ const teamMembers = [
 ];
 
 const Team = () => {
+  const { t } = useTranslation (["team"]);
   return (
     <section className="bg-Team py-20 px-6 lg:px-20 text-center bg-white dark:bg-gray-800 transition-colors duration-300">
       <h2 className="text-3xl md:text-4xl font-bold text-dark mb-6  dark:text-white">
-        Meet Our <span className="text-blue-500">Team</span>
+        {t("headline", { ns: "team" })} <span className="text-blue-500">{t("span", { ns: "team" })}</span>
       </h2>
       <p className="text-gray-300 max-w-2xl mx-auto mb-12 text-gray-600 dark:text-gray-300">
-        Meet the people working to solve citizens’ financial needs
+        {t("paragrap", { ns: "team" })}
       </p>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-gray-600 dark:text-gray-300">
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="rounded-2xl overflow-hidden dark:bg-dark/10 backdrop-blur-lg border border-white/40 shadow hover:shadow-blue-500/30 transform hover:-translate-y-2 transition-all duration-300"
+            className="rounded-2xl overflow-hidden dark:bg-white/10 backdrop-blur-lg border border-white/40 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-2 transition-all duration-300"
           >
             <img
               src={member.img}

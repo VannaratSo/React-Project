@@ -8,7 +8,7 @@ export default function Button({
   className = "",
 }) {
   const base =
-    " px-8 py-2 rounded-3xl border font-medium transition focus:outline-none focus:ring";
+    "inline-flex h-8 w-18 items-center px-8 py-2 rounded-3xl font-medium transition focus:outline-none focus:ring";
 
   const styles = {
     primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300",

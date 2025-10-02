@@ -70,7 +70,7 @@ export default function Register() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="mt-1 w-full px-4 py-2 rounded-xl bg-white/10 text-white placeholder-gray-300 outline-none border border-white/10 focus:border-blue-400 transition"
-                placeholder="John Doe"
+                placeholder="narat"
                 required
               />
             </label>
